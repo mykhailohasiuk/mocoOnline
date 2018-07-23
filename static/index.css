@@ -1,0 +1,232 @@
+body{
+  background-color: #333;
+  color: #ffff;
+  font-family: verdana;
+  padding: 0;
+  margin: 0;
+}
+header{
+  margin: 0;
+  width: 100%;
+  background-image: url('mbi-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MBI-logo{
+  padding-top: 300px;
+}
+
+/* Navigation Bar Main styling */
+
+nav{
+  width: 100%;
+  background: linear-gradient(#333, #666);
+
+}
+nav ul{
+  list-style-type: none;
+  text-decoration: none;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+nav li{
+  float: left;
+  border-right:  1px solid #bbb;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav li:last-child{
+  border-right: none;
+  padding-right: 20px;
+}
+
+
+nav a, nav a:visited, nav a:active, nav a:hover{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+nav li:last-child a{
+  padding-right: 10px;
+}
+
+nav li:hover{
+  cursor: pointer;
+}
+
+
+/* main section styling */
+
+main{
+  margin: 0;
+  width: 100%;
+}
+
+
+/* Form Styling */
+.form-wrapper{
+  width: 40%;
+  padding: 10px;
+  display: inline-block;
+}
+
+.form-main{}
+
+.form-main label{
+  margin-top: 20px;
+  margin-left:  30px;
+  display: block;
+}
+
+
+.form-main input{
+  display: block;
+}
+
+.text-input{
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Styling the chckbox */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Styling the file picker */
+
+
+
+.fileinput{
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom-file-picker{
+  width: 15%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(#666, #222);
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.submit{
+  margin:5px;
+  margin-right: 6%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(#2196F3, #222);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  float: right;
+}
+.submit:hover{
+  cursor: pointer;
+}
+
+
+
+/* MOnash logo section */
+
+.monash-logo{
+  display: inline-block;
+  width: auto;
+  text-align: center;
+
+}
+.monash-logo img{
+  margin-left: 10%;
+  width: 100%;
+  height: auto;
+}

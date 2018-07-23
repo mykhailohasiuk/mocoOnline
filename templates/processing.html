@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <!-- iOS meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="stylesheet" type="text/css" href="static/papaya.css?build=1445" />
+    <link rel="stylesheet" href="static/results.css">
+    <script type="text/javascript" src="static/papaya.js?build=1445"></script>
+
+    <title>Motion Corrction MBI Tools - Relustls</title>
+
+    <script type="text/javascript">
+      var params = [];
+      params["images"] = ["{{image}}"];
+    </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="MBI-logo">
+    </div>
+    <div class="header-info">
+
+    </div>
+  </header>
+  <nav>
+    <ul>
+       <li class="right"> <a href="#"> Home </a> </li>
+       <li class="right"> <a href="#"> How it works? </a> </li>
+       <li class="right"> <a href="#"> License </a> </li>
+       <li style="float:right"> <a href="#"> Contact </a> </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="process-info">
+      <div class="proceess-info-filler">
+        <h2>The uploaded files have been processed successfuly.</h2>
+        <p>The results have been sent you to your email. <br>
+        You can also download them by clicking the button below. </p>
+        <div class="download-div">
+          <a href="{{image}}">
+            <button type="button" class="button-download" name="download">Download processed files
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="monash-logo">
+        <img src="static/monash-logo.png" alt=""/>
+      </div>
+    </div>
+
+
+
+    <div class="viewer">
+        <div class="papaya" data-params="params"></div>
+    </div>
+
+
+  <footer>
+
+  </footer>
+
+
+</body>
+  </body>
+</html>

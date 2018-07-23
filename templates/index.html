@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>moco-online</title>
+    <link href="/static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'index.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="MBI-logo">
+      </div>
+      <div class="header-info">
+
+      </div>
+    </header>
+    <nav>
+      <ul>
+         <li class="right"> <a href="#"> Home </a> </li>
+         <li class="right"> <a href="#"> How it works? </a> </li>
+         <li class="right"> <a href="#"> License </a> </li>
+         <li style="float:right"> <a href="#"> Contact </a> </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="form-wrapper">
+        <form class="form-main" enctype="multipart/form-data" method="post">
+
+            <label for="email">Email: </label>
+            <input class="text-input" type="email" name="email" required="false" placeholder="Email"/>
+
+            <label for="fullname">Your full name: </label>
+            <input class="text-input" type="text" name="fullname" value="" placeholder="Full Name"/>
+
+            <label class="custom-file-picker" for="myfiles"> Pick a file </label>
+            <input class="fileinput" type="file" id="myfiles" name="files" multiple />
+
+            <label class="container">Send me and email with results!
+              <input type="checkbox" >
+              <span class="checkmark"></span>
+            </label>
+
+
+            <input class="submit" type="submit" value="Compute results!">
+        </form>
+      </div>
+      <div class="monash-logo">
+        <img src="static/monash-logo.png" alt=""/>
+      </div>
+
+
+
+    <footer>
+
+    </footer>
+
+</main>
+  </body>
+</html>
